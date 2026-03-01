@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Paintbrush, Home, Sofa, Ruler } from "lucide-react";
+import { Paintbrush, Home, Ruler, Eye, HardHat, PaintBucket, LayoutGrid, DoorOpen, ClipboardCheck } from "lucide-react";
 
 const services = [
   {
@@ -8,19 +8,39 @@ const services = [
     description: "Bespoke design concepts tailored to your lifestyle, from mood boards to final styling.",
   },
   {
-    icon: Home,
-    title: "Renovation",
-    description: "Complete home renovations with expert project management and premium finishes.",
-  },
-  {
-    icon: Sofa,
-    title: "Furniture Curation",
-    description: "Hand-picked furnishings and custom pieces that elevate every room.",
-  },
-  {
     icon: Ruler,
     title: "Space Planning",
     description: "Optimized layouts that maximize flow, functionality, and aesthetic harmony.",
+  },
+  {
+    icon: Eye,
+    title: "3D Visualization",
+    description: "Photorealistic 3D renders so you can see your space before construction begins.",
+  },
+  {
+    icon: HardHat,
+    title: "Site Supervision",
+    description: "Expert on-site oversight ensuring quality standards and timely project delivery.",
+  },
+  {
+    icon: PaintBucket,
+    title: "Painting & Finishes",
+    description: "Premium painting and finishing services that add character and elegance to every surface.",
+  },
+  {
+    icon: LayoutGrid,
+    title: "Gypsum & Ceilings",
+    description: "Custom gypsum ceiling designs that transform ordinary rooms into stunning spaces.",
+  },
+  {
+    icon: DoorOpen,
+    title: "Wardrobes & Cabinets",
+    description: "Tailor-made storage solutions combining beauty with practical functionality.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Consultancy",
+    description: "Professional design consultancy and site supervision for residential and commercial projects.",
   },
 ];
 
@@ -43,7 +63,7 @@ const Services = () => {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
