@@ -41,14 +41,14 @@ const Contact = () => {
               <Phone className="w-5 h-5 text-accent mt-1 shrink-0" />
               <div>
                 <p className="font-semibold text-foreground text-sm">Phone</p>
-                <p className="text-muted-foreground text-sm">+254 700 000 000</p>
+                <p className="text-muted-foreground text-sm">+254 795 436 583</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Mail className="w-5 h-5 text-accent mt-1 shrink-0" />
               <div>
                 <p className="font-semibold text-foreground text-sm">Email</p>
-                <p className="text-muted-foreground text-sm">info@flachomes.com</p>
+                <p className="text-muted-foreground text-sm">Frankholdings42@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

@@ -5,10 +5,10 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">
-              Flac<span className="text-gold-gradient">Homes</span>
+              Falc<span className="text-gold-gradient">Homes</span>
             </h3>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
-              Premium interior design and construction. Transforming spaces into extraordinary experiences.
+              Design | Build | Transform. Premium interior design and construction services in Nairobi, Kenya.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
               Services
             </h4>
             <ul className="space-y-2">
-              {["Interior Design", "Renovation", "Space Planning", "Furniture Curation"].map((s) => (
+              {["Interior Design", "3D Visualization", "Gypsum & Ceilings", "Wardrobes & Cabinets"].map((s) => (
                 <li key={s} className="text-primary-foreground/60 text-sm">{s}</li>
               ))}
             </ul>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/40 text-xs tracking-wider">
-            © {new Date().getFullYear()} FlacHomes Design Studios. All rights reserved.
+            © {new Date().getFullYear()} FalcHomes Design Studio. All rights reserved.
           </p>
         </div>
       </div>

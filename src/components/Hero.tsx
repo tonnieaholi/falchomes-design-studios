@@ -22,13 +22,13 @@ const Hero = () => {
           className="max-w-2xl"
         >
           <p className="text-sm font-body font-semibold tracking-[0.3em] uppercase text-gold mb-6">
-            Interior Design & Construction
+            Design | Build | Transform
           </p>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-warm-cream mb-6">
             Crafting Spaces That Inspire
           </h1>
           <p className="text-lg text-warm-cream/80 font-light max-w-lg mb-10 leading-relaxed">
-            We transform ordinary rooms into extraordinary living experiences. Premium interior design, meticulous craftsmanship, timeless elegance.
+            From interior design and 3D visualization to gypsum ceilings, wardrobes, and full site supervision — we bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

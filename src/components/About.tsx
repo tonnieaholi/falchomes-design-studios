@@ -33,7 +33,7 @@ const About = () => {
               Designing Dreams Since 2010
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              FlacHomes Design Studios is a premier interior design and construction firm dedicated to transforming spaces into works of art. With over a decade of experience, our team of skilled designers and craftsmen bring vision, precision, and passion to every project.
+              FalcHomes Design Studio is a premier interior design and construction firm led by founder Francis Otieno. We are dedicated to transforming spaces into works of art — with a philosophy rooted in Design, Build, and Transform.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               From concept to completion, we handle every detail — ensuring that your space reflects your personality while meeting the highest standards of quality and sustainability.
