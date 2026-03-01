@@ -1,12 +1,17 @@
+import logo from "@/assets/falchomes-logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-primary py-16">
       <div className="container mx-auto px-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="font-display text-2xl font-bold text-primary-foreground mb-4">
-              Falc<span className="text-gold-gradient">Homes</span>
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="FalcHomes logo" className="h-10 w-10 object-contain" />
+              <h3 className="font-display text-2xl font-bold text-primary-foreground">
+                Falc<span className="text-gold-gradient">Homes</span>
+              </h3>
+            </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
               Design | Build | Transform. Premium interior design and construction services in Nairobi, Kenya.
             </p>
