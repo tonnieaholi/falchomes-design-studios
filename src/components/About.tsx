@@ -30,7 +30,7 @@ const About = () => {
               About Us
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Designing Dreams Since 2010
+              Designing Dreams Since 2021
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               FalcHomes Design Studio is a premier interior design and construction firm led by founder Francis Otieno. We are dedicated to transforming spaces into works of art — with a philosophy rooted in Design, Build, and Transform.
@@ -41,9 +41,9 @@ const About = () => {
 
             <div className="grid grid-cols-3 gap-6">
               {[
-                { value: "200+", label: "Projects" },
-                { value: "15+", label: "Years" },
-                { value: "50+", label: "Awards" },
+                { value: "80+", label: "Projects" },
+                { value: "4+", label: "Years" },
+                { value: "15+", label: "Awards" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="font-display text-3xl font-bold text-accent">{stat.value}</p>
