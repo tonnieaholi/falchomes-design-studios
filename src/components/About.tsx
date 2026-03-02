@@ -3,9 +3,9 @@ import teamImg from "@/assets/about-team.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 lg:py-32 bg-secondary">
+    <section id="about" className="py-16 sm:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
