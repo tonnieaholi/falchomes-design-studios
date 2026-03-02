@@ -60,6 +60,9 @@ const Footer = () => {
           <p className="text-primary-foreground/40 text-xs tracking-wider">
             © {new Date().getFullYear()} FalcHomes Design Studio. All rights reserved.
           </p>
+          <p className="text-primary-foreground/30 text-xs tracking-wider mt-2">
+            Website by <a href="https://nagglobal.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 transition-colors">NAG Global</a>
+          </p>
         </div>
       </div>
     </footer>
