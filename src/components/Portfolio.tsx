@@ -3,10 +3,15 @@ import kitchenImg from "@/assets/portfolio-kitchen.jpg";
 import bedroomImg from "@/assets/portfolio-bedroom.jpg";
 import bathroomImg from "@/assets/portfolio-bathroom.jpg";
 import livingImg from "@/assets/portfolio-living.jpg";
+import kitchenReal1 from "@/assets/portfolio-kitchen-real1.jpg";
+import kitchenReal2 from "@/assets/portfolio-kitchen-real2.jpg";
+import wardrobeImg from "@/assets/portfolio-wardrobe.jpg";
 
 const projects = [
   { image: livingImg, title: "Modern Living Room", category: "Residential" },
-  { image: kitchenImg, title: "Gourmet Kitchen", category: "Renovation" },
+  { image: kitchenReal1, title: "Custom Kitchen Design", category: "Kitchen" },
+  { image: kitchenReal2, title: "Minimalist Kitchen", category: "Kitchen" },
+  { image: wardrobeImg, title: "Built-in Wardrobe", category: "Wardrobes" },
   { image: bedroomImg, title: "Serene Bedroom Suite", category: "Residential" },
   { image: bathroomImg, title: "Spa Bathroom", category: "Luxury" },
 ];
@@ -30,7 +35,7 @@ const Portfolio = () => {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}

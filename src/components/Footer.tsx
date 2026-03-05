@@ -8,8 +8,8 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src={logo} alt="FalcHomes logo" className="h-10 w-10 object-contain" />
-              <h3 className="font-display text-2xl font-bold text-primary-foreground">
-                Falc<span className="text-gold-gradient">Homes</span>
+              <h3 className="font-display text-2xl font-bold text-gold-gradient">
+                FalcHomes
               </h3>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
