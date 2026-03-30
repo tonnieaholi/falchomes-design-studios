@@ -1,14 +1,33 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, CheckCircle } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+
+const CONTACT_EMAIL = "Frankholdings.42@gmail.com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you! We'll be in touch shortly.");
+    setIsSubmitting(true);
+
+    const subject = encodeURIComponent(`New Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || "N/A"}\n\nMessage:\n${formData.message}`
+    );
+
+    window.open(`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`, "_self");
+
+    toast({
+      title: "Message ready!",
+      description: "Your email client should open. If not, please email us directly at " + CONTACT_EMAIL,
+    });
+
     setFormData({ name: "", email: "", phone: "", message: "" });
+    setIsSubmitting(false);
   };
 
   return (
@@ -48,7 +67,9 @@ const Contact = () => {
               <Mail className="w-5 h-5 text-accent mt-1 shrink-0" />
               <div>
                 <p className="font-semibold text-foreground text-sm">Email</p>
-                <p className="text-muted-foreground text-sm"><p className="text-muted-foreground text-sm">Frankholdings.42@gmail.com</p></p>
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-muted-foreground text-sm hover:text-accent transition-colors">
+                  {CONTACT_EMAIL}
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -103,9 +124,10 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="w-full sm:w-auto px-10 py-4 text-sm font-semibold tracking-wider uppercase bg-accent text-accent-foreground hover:opacity-90 transition-opacity"
+              disabled={isSubmitting}
+              className="w-full sm:w-auto px-10 py-4 text-sm font-semibold tracking-wider uppercase bg-accent text-accent-foreground hover:opacity-90 transition-opacity disabled:opacity-50"
             >
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </motion.form>
         </div>
